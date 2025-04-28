@@ -65,7 +65,10 @@ void BFS(int startingNode, int numberOfNode)
     queue<int> nodeQueue;
     nodeQueue.push(startingNode);
     for (i = 0; i <= numberOfNode; i++)
+    {
         visited[i] = 0;
+    }
+
     visited[startingNode] = 1;
 
     while (!nodeQueue.empty())
